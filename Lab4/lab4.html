@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhypen Fan Club</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Teks */
+        h1 {
+            text-decoration: overline;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+
+        /* Navigation Styling */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 6px 12px;
+        }
+        /* Stail Link */
+        a:link {
+            color: #FF0000;
+        }
+
+        a:visited {
+            color: #00FF00;
+        }
+
+        a:hover {
+            color: #FF00FF;
+        }
+
+        a:active {
+            color: #0000FF;
+        }
+
+        /* Layout Sections */
+        .main-header, .main-footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-section {
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            margin-top: 10px;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 250px;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #bf7021;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #996d1a;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+        <h1>Let's Meet ENHYPEN</h1>
+        <p>Join the fandom and celebrate the music, style, and energy of ENHYPEN!</p>
+    </header>
+
+    <nav class="navbar">
+        <ul> 
+            <li><a href="#video">Video</a></li>
+            <li><a href="#form">Join Us</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="video" class="content-section">
+        <article>
+            <h2>Enhypen - Chamber 5</h2>
+            <div class="video-wrapper">
+                <iframe width="600" height="340" 
+                src="C:\Users\User\OneDrive\Documents\Sem III\Web-Based Interface Design\Lab Module 4\Enhypen Chamber 5.mp4" 
+                        title="Enhypen Chamber 5" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Enjoy this performance and feel the vibe of ENHYPEN!</p>
+        </article>
+    </section>
+
+    <section id="form" class="content-section">
+        <article>
+            <h2>Become an Engene!</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                <p>Gender:</p>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label><br><br>
+
+                <p>Favorite Hobbies:</p>
+                <label><input type="checkbox" name="hobbies" value="Singing"> Singing</label>
+                <label><input type="checkbox" name="hobbies" value="Dancing"> Dancing</label>
+                <label><input type="checkbox" name="hobbies" value="Reading"> Reading</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+    
+    <section id="about" class="content-section">
+        <article>
+            <h2>About This Page</h2>
+            <p>This page is for new Engenes who want to connect, share, and celebrate ENHYPEN together. 
+                Whether you're into their music, style, or choreography, there's a place for you here!</p>
+            <p><strong><a href="https://www.youtube.com/@ENHYPENOFFICIAL" target="_blank">
+                Click for more</a></strong></p>
+        </article>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Engene Club | Made with Love by Zulaikha</p>
+    </footer>
+
+</body>
+</html>
